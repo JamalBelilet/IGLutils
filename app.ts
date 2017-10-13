@@ -4,10 +4,14 @@
 
 
 class VectorHelper {
-    constructor(private vector) {}
-    sortVector() {}
+    constructor(private vector = []) {}
+    sortVector(arg: string = 'init') {}
     addVectors() {}
     inverseVector() {}
     getMaxMin() {}
-    formula() {}
+    formula(_formula) {
+        for( let _v of this.vector) {
+            _formula(_v);
+        }
+    }
 }
