@@ -1,0 +1,33 @@
+{
+  "name": "igl_utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jasmine": "^2.8.0",
+    "jasmine-node": "^1.14.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamalBelilet/IGLutils.git"
+  },
+  "keywords": [
+    "node",
+    "git",
+    "jasmine",
+    "ts"
+  ],
+  "author": "JamalBelilet, Moumed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamalBelilet/IGLutils/issues"
+  },
+  "homepage": "https://github.com/JamalBelilet/IGLutils#readme"
+}
