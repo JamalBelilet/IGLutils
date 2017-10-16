@@ -106,7 +106,7 @@ export class VectorHelper {
         if (this.vector.length != _v.length)
         {
             // throw (alert('must be the same length !!'))
-            throw ('must be the same length !!');
+            throw ('vectors must have the same length !!');
         }
         else
         {
@@ -158,11 +158,11 @@ export class VectorHelper {
     console.log(
         vectorHelper
             .list()
-            // .sort().list()
-            // .reverse().list()
-            .summon(vector)
-            .list()
-            // .getMaxMin()
+            .sort().list()
+            .reverse().list()
+            .summon([84,-5,1,8,6,3]).list()
+            // .summon([84,-5,1,8]).list()
+            .getMaxMin()
     );
     vectorHelper.formula((_v) => {
         return (_v * 3)
