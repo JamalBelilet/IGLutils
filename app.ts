@@ -122,19 +122,13 @@ export class VectorHelper {
     }
 
     reverse() {
-
-        let j=0;
-        let swap;
-        for (let i = (this.vector.length-1) ; i>(Math.floor(this.vector.length/2)); --i )
-        {
-            swap = this.vector[j];
-            this.vector[j]=this.vector[i];
-            this.vector[i]=swap;
+        let _v = [];
+        const _length = this.vector.length;
+        for( let i = 0; i< _length; i++ ) {
+            _v.push(this.vector.pop());
         }
-        // console.log(this.vector);
-        // alert('vector is reversed');
-
-        return new VectorHelper(this.vector);
+        _v.forEach(_ => this.vector.push(_));
+        return new VectorHelper(_v);
     }
 
     list() {
@@ -164,11 +158,11 @@ export class VectorHelper {
     console.log(
         vectorHelper
             .list()
-            .sort().list()
-            .reverse().list()
+            // .sort().list()
+            // .reverse().list()
             .summon(vector)
             .list()
-            .getMaxMin()
+            // .getMaxMin()
     );
     vectorHelper.formula((_v) => {
         return (_v * 3)
