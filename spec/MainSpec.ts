@@ -33,4 +33,33 @@ describe('VectorHelper_units_testing ', ()=> {
             }).vector).toEqual([0,0,0,1.5]);
         });
     });
+    describe('| sort_unit_test', ()=> {
+        it("#1", function() {
+            let vectorHelper = new VectorHelper([-.5, .1, 9999, 0]);
+            expect(vectorHelper.sort().vector).toEqual([-0.5, 0, .1, 9999]);
+        });
+    });
+    describe('| summon_unit_test', ()=> {
+        it("#1", function() {
+            let vectorHelper = new VectorHelper([-.5, .1, 9999, 0]);
+            expect(vectorHelper.summon([1,1,1,1]).vector).toEqual([0.5, 1.1, 10000, 1]);
+        });
+    });
+    describe('| reverse_unit_test', ()=> {
+        it("#1", function() {
+            let vectorHelper = new VectorHelper([-.5, .1, 9999, 0]);
+            expect(vectorHelper.reverse().vector).toEqual([0, 9999, .1, -.5]);
+        });
+    });
+
+    describe('| reverse_formula_unit_test', ()=> {
+        it("#1", function() {
+            let vectorHelper = new VectorHelper([-.5, .1, 9999, 0]);
+            expect(vectorHelper.reverse()
+                .formula((_v)=> {
+                    return _v *10
+                }).vector)
+                .toEqual([0, 99990, 1, -5]);
+        });
+    });
 });
