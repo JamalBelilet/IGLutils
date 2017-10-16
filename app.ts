@@ -75,7 +75,9 @@
 //     }
 // }
 
-
+/**
+ * Class ´VectorHelper´.
+ */
 export class VectorHelper {
 
     constructor(private _vector: any[]) {}
@@ -85,7 +87,10 @@ export class VectorHelper {
     set vector(vector) {
         this._vector = vector;
     }
-
+    /**
+     * Fucntion to sort Vector ´sort´.
+     * @returns a VectorHelper instance .
+     */
     sort() {
         for (var i = 0; i < this.vector.length; i++) {
             for (var j = i + 1; j < this.vector.length; j++) {
@@ -100,7 +105,11 @@ export class VectorHelper {
 
         return new VectorHelper(this.vector);
     }
-
+    /**
+     * Summons VectorHelper vector member ´summon´.
+     * @param target  Comment for parameter ´target´.
+     * @returns a VectorHelper instance .
+     */
     summon(_v) {
         let __v = [];
         if (this.vector.length != _v.length)
@@ -120,7 +129,10 @@ export class VectorHelper {
         }
         return new VectorHelper(__v);
     }
-
+    /**
+     * Reverses The last VectorHelpers s Instance Vector ´reverse´.
+     * @returns a VectorHelper instance .
+     */
     reverse() {
         let _v = [];
         const _length = this.vector.length;
@@ -130,12 +142,18 @@ export class VectorHelper {
         _v.forEach(_ => this.vector.push(_));
         return new VectorHelper(_v);
     }
-
+    /**
+     * Lists the Last VectorHelper s Instance Vector ´list´.
+     * @returns a VectorHelper instance .
+     */
     list() {
         console.log(this.vector);
         return new VectorHelper(this.vector);
     }
-
+    /**
+     * Gives the Min and the Max of the Vector ´getMAxMin´.
+     * @returns   an Object of Type: {min:Number , max:Number}.
+     */
     getMaxMin() {
         let minMax= {min: 0, max: 0};
         return ((min, max ) => {
@@ -147,6 +165,11 @@ export class VectorHelper {
         })(this.vector[0], this.vector[0]);
 
     }
+    /**
+     * Gives a New Vector with a new Formula ´formula´.
+     * @param _formula  Collable  ´_formula´.
+     * @returns a VectorHelper instance .
+     */
     formula(_formula) {
         return new VectorHelper(this.vector.map(_v => _formula(_v.toString())));
     }
