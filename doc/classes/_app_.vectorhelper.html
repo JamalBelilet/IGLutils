@@ -72,7 +72,16 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Class ´VectorHelper´.</p>
+						<p>Class ´VectorHelper´Which contains different functions that will be used to manage a vector .
+							It contains these main functions : <br />
+							<div >
+								-sort();<br />
+								-summon(v);<br />
+								-reverse(v);<br />
+								-list(v);<br />
+								-getMaxMin(v);<br />
+								-formula(x);
+						</div></p>
 					</div>
 				</div>
 			</section>
@@ -132,16 +141,29 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L81">app.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L90">app.ts:90</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>constructor</dt>
+									<dd><p>which is used to instance and initialize the new instace of VectorHelper.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>_vector: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>an Attribut of our class which can be used as a parameter of instructor in TypeScript.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_app_.vectorhelper.html" class="tsd-signature-type">VectorHelper</a></h4>
+							<p>an instance of VectorHelper.</p>
 						</li>
 					</ul>
 				</section>
@@ -154,9 +176,14 @@
 					<div class="tsd-signature tsd-kind-icon">_vector<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L83">app.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L101">app.ts:101</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>an Attribut of our class which can be used as a parameter of instructor in TypeScript.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -172,24 +199,45 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L84">app.ts:84</a></li>
+									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L106">app.ts:106</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>accessor</dt>
+									<dd><p>a function wich serve to get the private parameter &#39;Vector&#39;.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+							<p>Vectors&#39;s Value</p>
 						</li>
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L87">app.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L114">app.ts:114</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>accessor</dt>
+									<dd><p>a function wich serve to set  the private parameter &#39;Vector&#39;.</p>
+									</dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>vector: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>which is our private attribut.</p>
+										</div>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<p>Vectors&#39;s Value</p>
 						</li>
 					</ul>
 				</section>
@@ -206,12 +254,14 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L173">app.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L204">app.ts:204</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Gives a New Vector with a new Formula ´formula´.</p>
+									<p>Apply a formula as a function to all elements of a vector. By <br/>
+										example, multiply all elements by 2. This formula must be in the form of a <br/>
+									function or method..<br/></p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -219,7 +269,7 @@
 								<li>
 									<h5>_formula: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Collable  ´_formula´.</p>
+										<p>can be multiplication addition or soustraction.</p>
 									</div>
 								</li>
 							</ul>
@@ -238,12 +288,13 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L157">app.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L186">app.ts:186</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Gives the Min and the Max of the Vector ´getMAxMin´.</p>
+									<p>Gives the Min and the Max of the Vector ´getMAxMin´<br/>
+									Simultaneously obtain the minimum and the maximum of a vector.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">object</span></h4>
@@ -269,7 +320,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L149">app.ts:149</a></li>
+									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L177">app.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -292,7 +343,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L136">app.ts:136</a></li>
+									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L164">app.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -315,12 +366,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L94">app.ts:94</a></li>
+									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L121">app.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Fucntion to sort Vector ´sort´.</p>
+									<p>Fucntion which is used to sort our vector.</p>
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="_app_.vectorhelper.html" class="tsd-signature-type">VectorHelper</a></h4>
@@ -338,18 +389,22 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/8618f50/app.ts#L113">app.ts:113</a></li>
+									<li>Defined in <a href="https://github.com/JamalBelilet/IGLutils/blob/d43d8ba/app.ts#L141">app.ts:141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Summons VectorHelper vector member ´summon´.</p>
+									<p>Summons Summon two vectors. It must generate an exception if both vectors have <br/>
+									different sizes.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>_v: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>a VectorHElper instance.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_app_.vectorhelper.html" class="tsd-signature-type">VectorHelper</a></h4>

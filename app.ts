@@ -76,19 +76,46 @@
 // }
 
 /**
- * Class ´VectorHelper´.
+ * Class ´VectorHelper´Which contains different functions that will be used to manage a vector .
+ *  It contains these main functions : <br />
+ *     <div >
+ *       -sort();<br />
+ *      -summon(v);<br />
+ *      -reverse(v);<br />
+ *      -list(v);<br />
+ *      -getMaxMin(v);<br />
+ *      -formula(x);
+ *      </div>
  */
 export class VectorHelper {
+    /**
+     * @constructor which is used to instance and initialize the new instace of VectorHelper.
+     * @param _vector  an Attribut of our class which can be used as a parameter of instructor in TypeScript.
+     * @param _vector  an Attribut of our class which can be used as a parameter of instructor in TypeScript.
+     * @returns an instance of VectorHelper.
+     */
 
-    constructor(private _vector: any[]) {}
+    constructor( /**
+                  * @param which _vector used to instance and initialize the new instace of VectorHelper.
+                  *
+                  */private _vector: any[]) {}
+    /**
+     * @accessor a function wich serve to get the private parameter 'Vector'.
+     * @returns Vectors's Value
+     */
     get vector() {
         return this._vector;
     }
+
+    /**
+     * @accessor a function wich serve to set  the private parameter 'Vector'.
+     *@param vector  which is our private attribut.
+     */
     set vector(vector) {
         this._vector = vector;
     }
     /**
-     * Fucntion to sort Vector ´sort´.
+     * Fucntion which is used to sort our vector.
      * @returns a VectorHelper instance .
      */
     sort() {
@@ -106,8 +133,9 @@ export class VectorHelper {
         return new VectorHelper(this.vector);
     }
     /**
-     * Summons VectorHelper vector member ´summon´.
-     * @param target  Comment for parameter ´target´.
+     * Summons Summon two vectors. It must generate an exception if both vectors have <br/>
+     * different sizes.
+     * @param _v  a VectorHElper instance.
      * @returns a VectorHelper instance .
      */
     summon(_v) {
@@ -151,7 +179,8 @@ export class VectorHelper {
         return new VectorHelper(this.vector);
     }
     /**
-     * Gives the Min and the Max of the Vector ´getMAxMin´.
+     * Gives the Min and the Max of the Vector ´getMAxMin´<br/>
+     *Simultaneously obtain the minimum and the maximum of a vector.
      * @returns   an Object of Type: {min:Number , max:Number}.
      */
     getMaxMin() {
@@ -166,8 +195,10 @@ export class VectorHelper {
 
     }
     /**
-     * Gives a New Vector with a new Formula ´formula´.
-     * @param _formula  Collable  ´_formula´.
+     * Apply a formula as a function to all elements of a vector. By <br/>
+     * example, multiply all elements by 2. This formula must be in the form of a <br/>
+     * function or method..<br/>
+     * @param _formula  can be multiplication addition or soustraction.
      * @returns a VectorHelper instance .
      */
     formula(_formula) {
